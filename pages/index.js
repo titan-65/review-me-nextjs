@@ -90,12 +90,7 @@ export default function Home(props) {
 
   return (
       <div>
-          <Head>
-              <title>Review Me</title>
-              <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet"/>
 
-          </Head>
-          <Navbar/>
           <div className="container">
               <Header/>
               <SecondNav/>
@@ -140,13 +135,7 @@ export default function Home(props) {
           </main>
           {/*// <!-- /.container -->*/}
 
-          <footer className="footer-black">
-              <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                  href="https://twitter.com/mdo">@mdo</a>.</p>
-              <p>
-                  <a href="#">Back to top</a>
-              </p>
-          </footer>
+
       </div>
   )
 }

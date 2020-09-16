@@ -1,7 +1,16 @@
 const About = () => {
     return (
         <div>
-            About Page
+            <div className="page-header header-filter header-small" data-parallax="true"
+                 style={{backgroundImage: `url('/images/pontus-wellgraf-ZiIIigaZfrI-unsplash.jpg')`}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8 ml-auto mr-auto text-center">
+                            <h2 className="title">About</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

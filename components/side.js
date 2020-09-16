@@ -1,8 +1,24 @@
-import React from 'react';
+import React from 'react'
+import { useRouter } from "next/router"
+import Modal from "./modal";
+import ReviewForm from "./reviewCreateForm"
+import {createReview} from "../server/actions"
 
 const Side = () => {
+
+    const router = useRouter()
+    const handleCreateReview = async (review) => {
+       const createdReview = await createReview(review)
+        await router.push('/reviews')
+        console.log(JSON.stringify(createdReview))
+    }
     return (
         <aside className="col-md-4">
+            <hr/>
+            <div className="col-md-12">
+                <ReviewForm onSubmit={handleCreateReview}/>
+
+            </div>
             <div className="p-4 mb-3 bg-light rounded">
                 <h4 className="font-italic">About</h4>
                 <p className="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis

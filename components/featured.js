@@ -21,8 +21,9 @@ const Featured = () => {
                             <title>Placeholder</title>
                             <rect width="100%" height="100%" fill="#55595c"/>
                             <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            <image className="img-thumbnail" href="https://images.unsplash.com/photo-1599841934376-1896a80aeace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"/>
-                            {/*<img src="../public/images/pontus-wellgraf-ZiIIigaZfrI-unsplash.jpg" alt="img"/>*/}
+                            <image className="img-thumbnail" href="/images/pontus-wellgraf-ZiIIigaZfrI-unsplash.jpg"
+                                   style={{display: 'block', center: 'center'}}/>
+                            {/*<img src="/images/pontus-wellgraf-ZiIIigaZfrI-unsplash.jpg" alt="img"/>*/}
                         </svg>
 
 
